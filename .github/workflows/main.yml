@@ -24,17 +24,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
-- name: Generate Datas
-  run: |
-    git config --global user.name "Lucaszzv"
-    git config --global user.email "pokedigedg@gmail.com"
-    git remote set-url origin https://seu-username:${{ secrets.ACTIONS_TOKEN }}@github.com/usuario-repo/repo.git
-- name: Commit e push mudanças
-  run: |
-    git config user.name "GitHub Actions"
-    git config user.email "actions@github.com"
-    git add .
-    git commit -m "Commit automatizado por GitHub Actions"
-    git push origin HEAD:${{ github.ref }}
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
