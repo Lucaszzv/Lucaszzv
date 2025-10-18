@@ -1,4 +1,4 @@
-- olá! Eu sou Lucaszzv 👋 
+- olá! Eu sou Lucas 👋 
 
 -Faço faculdade de ADS
 
